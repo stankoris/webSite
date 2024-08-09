@@ -232,7 +232,6 @@ footer i:hover {
 #contactSpan.open {
     transform: translateX(0);
     transition: transform 1s ease;
-    z-index: 1000;
 }
 
 
@@ -365,10 +364,10 @@ footer i:hover {
 }
 
 #designPage {
-    opacity: 0;
+
     margin: 0;
     height: 99vh;
-    width: 100%;
+    width: 30%;
     background-color: rgb(202, 202, 202);
     position: fixed;
     bottom: 0;
@@ -378,6 +377,7 @@ footer i:hover {
     cursor: pointer;
     overflow: hidden;
     padding-top: 3rem;
+    transition: transform 0.5s ease;
 }
 #designPage.open {
     opacity: 1;
@@ -385,20 +385,39 @@ footer i:hover {
     transition: transform 2s ease;
 }
 
+#designPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#designPageContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 33%;
+}
+
+#designPageContainer img {
+    width: 50%;
+
+}
+
 #toolsPage {
-    opacity: 0;
     margin: 0;
     height: 99vh;
-    width: 100%;
+    width: 30%;
     background-color: rgb(202, 202, 202);
-    position: fixed;
-    bottom: 0;
     transform: translateY(-100%);
     display: flex;
     justify-content: center;
     cursor: pointer;
     overflow: hidden;
     padding-top: 3rem;
+    position: fixed;
+    bottom: 0;
+    left: 35%;
+    transition: transform 0.5s ease;
 }
 #toolsPage.open {
     opacity: 1;
@@ -407,19 +426,20 @@ footer i:hover {
 }
 
 #developmentPage {
-    opacity: 0;
     margin: 0;
     height: 99vh;
-    width: 100%;
+    width: 30%;
     background-color: rgb(202, 202, 202);
-    position: fixed;
-    bottom: 0;
     transform: translateX(100%);
     display: flex;
     justify-content: center;
     cursor: pointer;
     overflow: hidden;
     padding-top: 3rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.5s ease;
 }
 #developmentPage.open {
     opacity: 1;
