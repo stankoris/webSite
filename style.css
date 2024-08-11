@@ -193,11 +193,11 @@ footer i:hover {
     padding: 0;
     margin: 0;
 }
-
+/* 
 #myServicesDivContainer span:hover {
     color: var(--hover-color);
     cursor: pointer;
-}
+} */
 
 #myServicesDivContainer.open {
     min-height: 6rem;
@@ -327,9 +327,9 @@ footer i:hover {
     color: black;
 }
 
-.tool:hover {
+/* .tool:hover {
     color: #ac7d7d;
-}
+} */
 
 #personalCardButtons {
     display: flex;
@@ -348,6 +348,11 @@ footer i:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
 .connect {
     background-color: #c6f5ff;
 }
@@ -363,8 +368,7 @@ footer i:hover {
     background-color: rgb(255, 145, 145);
 }
 
-#designPage {
-
+/* #designPage {
     margin: 0;
     height: 99vh;
     width: 30%;
@@ -445,4 +449,4 @@ footer i:hover {
     opacity: 1;
     transform: translateX(0);
     transition: transform 2s ease;
-}
+} */
